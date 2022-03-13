@@ -1,0 +1,43 @@
+<meta chasrset ="UTF-8">
+<script>
+
+function pulaLinha(){
+
+	document.write("<br><br>");
+}
+
+function mostra(texto){
+
+	document.write(texto);
+	pulaLinha();
+}
+
+function sorteia(n){
+  
+  return Math.round(Math.random() * n);  
+
+}
+
+var numeroPensado = sorteia(10)
+
+var chute = parseInt(prompt("Já pensei, qual vc acha que é?"));
+
+if(chute == numeroPensado){
+	
+	mostra("Barbarizou manaaah!");
+}else{
+
+	if(chute > numeroPensado){
+
+		mostra("Foi triste madrinha, seu numero é maior do que o pensado!");
+	}else{
+
+		mostra("Podre mana, o numero foi menor!")
+	}
+
+}
+
+
+
+
+	</script>
